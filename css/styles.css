@@ -6,6 +6,7 @@
     --text-secondary: #6c757d;  /* Secondary text for subtle elements */
     --bg-light: #f8f9fa;        /* Light background color */
     --white: #fff;
+    --bg-main: #f8f9fa;
 }
 
 /* Global styles and typography */
@@ -13,6 +14,7 @@ body {
     font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     padding-top: 0;
     color: var(--text-main);
+    background-color: var(--bg-main); 
 }
 
 h1, h2, h3, .h1, .h2, .h3 {
