@@ -1,0 +1,223 @@
+ /* Variables - Define our color scheme and reusable values */
+:root {
+    --primary: #0563bb;         /* Main brand color for highlights and links */
+    --primary-dark: #045092;    /* Darker version for hover states */
+    --text-main: #272829;       /* Main text color */
+    --text-secondary: #6c757d;  /* Secondary text for subtle elements */
+    --bg-light: #f8f9fa;        /* Light background color */
+    --white: #fff;
+}
+
+/* Global styles and typography */
+body {
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    padding-top: 0;
+    color: var(--text-main);
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-main);
+}
+
+h1, .h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+h2, .h2 {
+    font-size: 3.5rem;
+}
+
+h3, .h3 {
+    font-size: 2rem;
+}
+
+/* Navigation Styles */
+#sideNav {
+    padding: 1rem;
+    background-color: var(--primary);
+}
+
+#sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+}
+
+#sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+}
+
+#sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--white);
+}
+
+/* Section Styling */
+section.resume-section {
+    display: flex;
+    align-items: center;
+    padding: 6rem 3rem;
+    min-height: 100vh;
+}
+
+section.resume-section .resume-section-content {
+    width: 100%;
+}
+
+/* Link and Text Styling */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.subheading {
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+}
+
+/* Social Icons */
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--text-main);
+    color: var(--white);
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icons .social-icon:hover {
+    background-color: var(--primary);
+    transform: scale(1.1);
+}
+
+/* Skills Section */
+.dev-icons {
+    font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i {
+    color: var(--text-secondary);
+}
+
+.dev-icons .list-inline-item i:hover {
+    color: var(--primary);
+}
+
+/* Project Links */
+.project-links {
+    margin-top: 1.5rem;
+}
+
+.project-link {
+    display: inline-block;
+    margin-right: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 992px) {
+    body {
+        padding-top: 0;
+        padding-left: 17rem;
+    }
+    
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+    
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+    
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+    
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-item {
+        display: block;
+        width: 100%;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 1rem;
+    }
+}
+
+/* Visitor Counter Styles (Placeholder for now) */
+.visitor-counter {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--bg-light);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.visitor-count {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+}
